@@ -3,7 +3,7 @@
 namespace SimpleRandomizer
 {
 	/// <summary>
-	/// Класс генерирует всякие псевдо-случайности
+	/// Класс генерирует всякие "случайности"
 	/// </summary>
     public class Randomizer
     {
@@ -13,16 +13,7 @@ namespace SimpleRandomizer
 		readonly Random _generator = new Random();
 
 		/// <summary>
-		/// Генератор псевдо-случайного числа от 0 до 100
-		/// </summary>
-		/// <returns></returns>
-		public int GenerateInt()
-		{
-			return GenerateInt(0, 100);
-		}
-
-		/// <summary>
-		/// Генератор псевдо-случайного числа от 0
+		/// Генератор псевдо-случайного числа
 		/// </summary>
 		/// <param name="maxValue">Максимальное значение</param>
 		/// <returns></returns>
@@ -37,7 +28,7 @@ namespace SimpleRandomizer
 		/// <param name="minValue">Минимльное значение</param>
 		/// <param name="maxValue">Максимальное значение</param>
 		/// <returns></returns>
-		public int GenerateInt(int minValue = 0, int maxValue=100)
+		public int GenerateInt(int minValue, int maxValue)
 		{
 			var result = _generator.Next(minValue, maxValue);
 

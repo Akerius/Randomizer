@@ -1,13 +1,11 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SimpleRandomizer;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace SimpleRandomizer.Tests
 {
 	[TestClass]
 	public class RandomizerTest
 	{
-		public SimpleRandomizer.Randomizer _randomizer = new SimpleRandomizer.Randomizer();
+		private readonly Randomizer _randomizer = new Randomizer();
 
 		[TestMethod]
 		public void GenerateIntGlobalTest()
@@ -28,10 +26,10 @@ namespace SimpleRandomizer.Tests
 		[TestMethod]
 		public void GenerateIntArrayTest()
 		{
-			int minValue = 100;
-			int maxValue = 0;
-			bool result = false;
-			for (int i = 0; i < 1000; i++)
+			var minValue = 100;
+			var maxValue = 0;
+			var result = false;
+			for (var i = 0; i < 1000; i++)
 			{
 				var someValue = _randomizer.GenerateInt(0, 100);
 
@@ -52,7 +50,7 @@ namespace SimpleRandomizer.Tests
 		[TestMethod]
 		public void GenerateStringTest()
 		{
-			var newString = _randomizer.GenerateString(6);
+			var newString = _randomizer.GenerateString();
 		
 			Assert.IsTrue((newString.Length==6), "Ошибка формирования случайной строки");
 		}

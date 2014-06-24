@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleRandomizer", "Randomizer\SimpleRandomizer.csproj", "{6534711B-B1CF-4A19-AF13-5227C1D133FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleRandomizer.Tests", "Randomizer.Tests\SimpleRandomizer.Tests.csproj", "{F127DBDB-8F14-4A7C-80CE-A29DA70C9FE0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6534711B-B1CF-4A19-AF13-5227C1D133FF} = {6534711B-B1CF-4A19-AF13-5227C1D133FF}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://ntorgov.visualstudio.com/defaultcollection
+		SccProjectUniqueName0 = Randomizer\\SimpleRandomizer.csproj
+		SccProjectName0 = Randomizer
+		SccLocalPath0 = Randomizer
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = Randomizer.Tests\\SimpleRandomizer.Tests.csproj
+		SccProjectName2 = Randomizer.Tests
+		SccLocalPath2 = Randomizer.Tests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6534711B-B1CF-4A19-AF13-5227C1D133FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6534711B-B1CF-4A19-AF13-5227C1D133FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6534711B-B1CF-4A19-AF13-5227C1D133FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6534711B-B1CF-4A19-AF13-5227C1D133FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F127DBDB-8F14-4A7C-80CE-A29DA70C9FE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F127DBDB-8F14-4A7C-80CE-A29DA70C9FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F127DBDB-8F14-4A7C-80CE-A29DA70C9FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F127DBDB-8F14-4A7C-80CE-A29DA70C9FE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

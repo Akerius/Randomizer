@@ -3,7 +3,7 @@
 namespace SimpleRandomizer
 {
 	/// <summary>
-	/// Класс генерирует всякие случайности
+	/// Класс генерирует всякие псевдо-случайности
 	/// </summary>
     public class Randomizer
     {

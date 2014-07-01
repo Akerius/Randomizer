@@ -23,7 +23,7 @@ namespace SimpleRandomizer
 		}
 
 		/// <summary>
-		/// Генератор псевдо-случайного числа
+		/// Генератор псевдо-случайного числа.
 		/// </summary>
 		/// <param name="minValue">Минимльное значение</param>
 		/// <param name="maxValue">Максимальное значение</param>
